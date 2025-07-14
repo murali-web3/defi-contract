@@ -42,11 +42,31 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #9d4edd;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+}
+
+         .logo img {
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+.logo-text {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
         }
 
         .nav-links {
@@ -348,7 +368,9 @@
     
     <header>
         <nav class="container">
-            <div class="logo">MK</div>
+               <div class="logo">
+                 <img src="./profile pic.jpg" alt="MK" />
+               </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
